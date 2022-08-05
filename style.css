@@ -5,7 +5,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: rgb(39, 38, 38);
+    
 }
 
 h1,h2,h3,h4,h5,h6,span{
@@ -37,6 +37,16 @@ li{
 }
 .text--purple{
     color: rgb(172, 7, 172);
+}
+section:nth-child(even) {
+    background-color: rgb(15, 15, 15);
+}
+
+.container{
+    padding: 50px 0;
+}
+.section--title{
+    margin-bottom: 20px;
 }
 nav{
     height: 100px;
@@ -76,6 +86,12 @@ nav{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: rgb(27, 26, 26);
+}
+.about-me--info{
+    display: flex;
+    flex-direction: column;
+
 }
 .about-me--info--container{
     display: flex;
@@ -91,7 +107,7 @@ nav{
     height: 100px;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 8px 16px rgba(0.8,0.3, 0.3, 0.4);
+    box-shadow: 0 8px 16px rgba(0.,0.3, 0.3, 0.4);
     margin-bottom: 28px;
 }
 .about-me--picture{
@@ -108,8 +124,61 @@ nav{
     margin-bottom: 28px;
 }
 .about-me--link{
-    font-size: 20px;
+    font-size: 30px;
     color:rgb(254, 106, 131);
     text-decoration: none;
     padding: 0 16px;
+   
+}
+.about-me--link:hover{
+    color: purple;
+}
+.about-me--img--container{
+    margin-top: 10%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.about-me--img{
+ width: 100%;   
+}
+
+.language--img{
+    width: 100%;
+    max-width: 100px;
+    transition: all 300ms ease;
+}
+.language:hover .language--img {
+    filter: brightness(70%);
+    opacity: 0.86;
+    transform: scale(.85);
+}
+.language{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.language--img--wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 16px;
+
+}
+
+.language--list{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.language--name{
+    position: absolute;
+    bottom: 0;
+    transform: scale(0);
+    transition: all 300ms;
+    font-size: 20px;
+}
+.language:hover .language--name{
+    transform: scale(1);
 }
